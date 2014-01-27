@@ -102,7 +102,7 @@ class Low_search_rel_ext {
         //for each result add tot he index_text param
         foreach ($results->result_array() as $key => $value) 
         {
-            $data['index_text'] .= ' '.$value['title'].' |';
+            $data['index_text'] .= ' '.low_clean_string($value['title']).' |';
             
         }
 
